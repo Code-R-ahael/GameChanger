@@ -1,13 +1,19 @@
 #!/usr/bin/python
 
-class Color:
-    Black, White = range(2)
+from enum import Enum
 
-class Status:
-    Dead, Alive = range(2)
+class Color(Enum):
+    Black = 1
+    White = 2
 
-class Type:
-    Pon, Castle, Knight, Bishop, Queen, King = range(6)
+class Status(Enum):
+    Dead = 1
+    Alive = 2
 
-print Color.Black
-print Color.White
+class Type(Enum):
+    Pon = 1
+    Castle = 2
+    Knight = 3
+    Bishop = 4
+    Queen = 5
+    King = 6
